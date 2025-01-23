@@ -31,3 +31,16 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
+function playGame() {
+    for (let i = 0; i < 5; i++) {
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice();
+        playRound(humanChoice, computerChoice);
+    }
+    
+    if (humanScore > computerScore) {
+        console.log("You win the game!");
+    } else {
+        console.log("Computer wins the game!");
+    }
+}
