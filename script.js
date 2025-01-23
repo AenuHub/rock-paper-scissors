@@ -43,4 +43,7 @@ function playGame() {
     } else {
         console.log("Computer wins the game!");
     }
+    console.log(`Final score: You ${humanScore} - ${computerScore} Computer`);
 }
+
+playGame();
